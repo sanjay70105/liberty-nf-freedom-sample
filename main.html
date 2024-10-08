@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Nf Market</title>
+  <link rel="icon" href="nf.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  </head>
+
+  <body>
+    <style>
+      *{
+        font-family: 'poppins',sans-serif;
+      }
+      .parent {
+        background-image: url("big.jpg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom:100px;
+      }
+      
+      .child1{
+        padding-top: 50px;
+      }
+
+    
+
+      .child-3 {
+        background-image: url("section2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      
+
+.child-5 {
+        background-image: url("back.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+      .child-6{
+        background-image: url("mh.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+      .child-7{
+        display:grid;
+        grid-template-columns: repeat(auto);
+      }
+      .moj{
+        background-image: url("back.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding:15px;
+        color:white;
+      }
+  
+
+.card-container {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+li:hover{
+  color:red;
+  cursor:pointer;
+  background-color: aquamarine;
+  padding:4px;
+  text-align: center;
+  width:90px;
+ border-radius: 10px;
+}
+
+.card {
+  width: 18rem; 
+}
+.p-2 .a:hover{
+  background-color: orange;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .card-container {
+    gap: 50px; 
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    gap: 30px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+}
+}
+@media screen and (max-width:600px) {
+  .card {
+  width: 15rem; 
+}
+.moj p{
+  font-size: 15px;;
+}
+p{
+  font-size: 15px;;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 15px;;
+}
+.btn{
+  font-size: 15px;;
+}
+nav{
+  font-size:15px;
+}
+  
+}
+     
+      
+      
+
+    </style>
+
+
+    <div class="Mother">
+      <!--parent div -->
+      <div class="parent">
+        <!--child div && Navbar -->
+        <div class="child-1">
+          <header class="header-area header-sticky">
+            <nav class="navbar navbar-expand-sm p-3 bg-custom " style="background-color:white;">
+              <div class="container-fluid">
+                <h1 class="navbar-brand " style="color:aqua"><img src="nav.jpg" style="width:150px; ">
+                </h1>
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#fda"
+                  aria-controls="offcanvasScrolling" style="background-color:white;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link" style="color:rgb(113, 14, 113);" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:rgb(113, 14, 113);" href="">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:rgb(113, 14, 113);" href=""> Details</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:rgb(113, 14, 113);" href="">Author</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:rgb(113, 14, 113);" href="">Create</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <!--offcanvas -->
+        <div class="offcanvas offcanvas-start" id="fda" data-bs-backdrop="static"
+          aria-labelledby="offcanvasWithBackdropLabel">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title" style="color: crimson;">Profile</h1>
+            <button class="btn btn-light btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Explore</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Item Details</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Author</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Create</a></li>
+            </ul>
+          </div>
+        </div>
+        </header>
+
+        <!--child2 div for image and para -->
+        <section class="child-2">
+          <div class="container mt-5 d-flex flex-column flex-md-row justify-content-between pb-5">
+            <div class="row p-3">
+              <div class="col-12 col-md-6 ">
+                <h3 class="p-2 text-white">Liberty NFT Market</h3>
+                <h1 class="p-2 text-white">Create, Sell & Collect Top NFTs</h1>
+                <p class="p-2 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum veniam sunt iusto tenetur,
+                  voluptatum quam alias saepe pariatur iure sapiente veritatis, labore asperiores quasi animi,
+                  exercitationem corrupti expedita tempore.
+                </p>
+                <div class="d-inline-flex flex-column flex-sm-row align-items-center">
+                  <div class="p-2">
+                    <button class=" a btn btn-outline-warning" >Explore Top NFTs</button>
+                  </div>
+                  <div class="p-2">
+                    <button class="btn btn-primary">Watch Our Videos</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img id="mu" src="banner.jpg.png" class="img-fluid" style="border-radius:20%; max-width:100%; height:auto;">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--child-3 div for collections and musics -->
+     
+</div>
+      <section class="child-3">
+
+        <h2 class="p-2 text-center text-white">Browse through our <em style="color:aqua"> categories </em>Here</h2>
+
+        <div class="categories-collections p-4">
+          <div class="container p-4 text-danger text-center">
+
+            <div class="row">
+              <div class="col-lg-3 ">
+                <img src="bl.jpg">
+                <h4 class="p-3">Blockchain</h4>
+              </div>
+              <div class="col-lg-3 ">
+                <img src="dart.jpg">
+                <h4 class="p-3">Digital Art</h4>
+              </div>
+              <div class="col-lg-3 ">
+                <img src="mu.jpg">
+                <h4 class="p-3">Music Art</h4>
+              </div>
+              <div class="col-lg-3 ">
+                <img src="va.jpg">
+                <h4 class="p-3">Virtual Word</h4>
+              </div>
+            </div>
+          </div>
+          </div>
+           <!--another container for collection of cards -->
+          <h2 class="p-5 text-center text-white">Explore some latest<em style="color:aqua"> Collection </em> in the market</h2>
+        
+          <div class="container">
+            <div class="card-container">
+              <div class="card">
+                <img src="frame.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white">
+                  <h5 class="card-title">Bored Ape Kennel Club</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti earum nam at aperiam sapiente. Molestias voluptat.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Bored Ape</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="frame.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white">
+                  <h5 class="card-title">Genesis Collective Statue</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti earum nam at aperiam sapiente. Molestias voluptat.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Genesis</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="frame.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white">
+                  <h5 class="card-title">Worldwide Artwork Ground</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti earum nam at aperiam sapiente. Molestias voluptat.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Worldwide</a>
+                </div>
+              </div>
+            </div>
+          </div>
+</section>
+<!--this section for child-5 and all div are set to be in one container-->
+<section class="child-5">
+  <div class="one p-4">
+    <div class="row ">
+      <div class="col p-5 ">
+    <h1 class="text-white">Create Your NFT and Put it on the Market.</h1>
+    </div>
+     <div class="col p-5 ">
+    <button class="btn btn-primary" type="button">Create Your NFT Now</button>
+  </div>
+</div>
+    <div class="row p-5">
+      <div class="col-lg-4 text-white border border-dark p-4">
+        <img src="one.jpg.png">
+        <h2>Set up Your Wallet</h2>
+        <p>NFT means non refunafable that are used in cryptocurrency markets.There are many kind of NFT industry is there </p>
+
+     </div>
+     
+      <div class="col-lg-4 text-white border border-dark p-4">
+        <img src="two.jpg.png">
+        <h2 > Add your Digital NFT</h2>
+        <p>there are many different kind of websites which includes in the NFT Transaction</p>
+
+      </div>
+    
+    <div class="col-lg-4 text-white border border-dark p-4">
+        <img src="three.jpg.png" style="border-radius:50px  white">
+        <h2>Sell Your NFT & Make Profit</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et adipisci perferendis exercitationem quia. Consectetur.</p>
+
+      </div>
+    </div>
+  </div>
+</section>     
+<!-- footer -->
+  <footer class="moj">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2022 <a href="#" style="color:black;text-decoration: none;">Liberty</a> NFT Marketplace Co., Ltd. All rights reserved.
+          &nbsp;&nbsp;
+      
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+          <!-- Bootstrap JS Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
